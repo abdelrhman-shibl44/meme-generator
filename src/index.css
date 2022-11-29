@@ -8,9 +8,15 @@
 body {
   margin: 0;
   font-family: 'Almarai', sans-serif;
+
+}
+
+.App {
   background: linear-gradient(40deg, black, #03a9f4);
   height: 100vh;
+  overflow-y: auto;
 }
+
 
 /* start responsive our page */
 .container {
@@ -36,6 +42,7 @@ body {
     width: 750px;
   }
 }
+
 
 /* end responsive */
 /* start header */
@@ -167,8 +174,8 @@ main {
 @media(max-width:768px) {
   .exper {
     width: 100%;
-    max-height: 350px;
-    min-height: 300px;
+    max-height: 370px;
+    font-size: 18px;
   }
 }
 
