@@ -3,7 +3,7 @@ export default function Main() {
     let [formData, setFormData] = React.useState({
         topText: "",
         bottomText: "",
-        randomImage: "https://i.imgflip.com/1bij.jpg",
+        randomImage: "https://i.imgflip.com/26jxvz.jpg",
     });
     const [allMemes, setAllMemes] = useState([])
     function handleClick(e) {
