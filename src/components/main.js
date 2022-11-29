@@ -3,17 +3,17 @@ export default function Main() {
     let [formData, setFormData] = React.useState({
         topText: "",
         bottomText: "",
-        randomImage: "http://i.imgflip.com/1bij.jpg",
+        randomImage: "https://i.imgflip.com/1bij.jpg",
     });
     const [allMemes, setAllMemes] = useState([])
     function handleClick(e) {
         e.preventDefault()
         const itemsLength = allMemes.length
         let randomItem = Math.floor(Math.random() * itemsLength)
-        let item = allMemes[randomItem].url;
+        let newImage = allMemes[randomItem].url;
         setFormData(prevData => ({
             ...prevData,
-            randomImage: item
+            randomImage: newImage
         }))
     }
     function handleChange(e) {
